@@ -1,0 +1,97 @@
+.experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px; // Added padding here
+  padding-bottom: 50px;
+  box-sizing: border-box; // To make sure padding doesn't affect the width
+}
+
+.experience-link {
+  text-decoration: none;
+  color: inherit; // Add more styles if needed
+}
+
+.experience-item {
+  margin: 80px 0; // Increased margin from 20px to 80px
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.image-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.experience-image {
+  max-width: 100%;
+  transition: transform 0.5s ease;
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.black-text,
+.white-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.black-text {
+  color: #000000;
+  z-index: 2;
+}
+
+.white-text {
+  color: #FFFFFF;
+  z-index: 3;
+  mix-blend-mode: difference;
+}
+
+.project-name,
+.company-name {
+  font-family: 'Amiri', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: normal;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.project-name {
+  font-size: 96px;
+  z-index: 2;
+}
+
+.company-name {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 2;
+  top: calc(50% + 60px); // Adjust the 60px as needed for spacing
+}

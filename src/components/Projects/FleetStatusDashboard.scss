@@ -1,0 +1,226 @@
+.project-page {
+  padding-top: 144.2px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .content-container {
+    max-width: 1280px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+
+    h1 {
+      font-size: 32px;
+      margin: 0 0 20px;
+      color: #333333;
+      font-family: 'Amiri', sans-serif;
+      font-weight: normal;
+      text-align: left;
+    }
+
+    .info-section {
+      display: flex;
+      border-top: 1px solid rgba(34, 34, 34, 0.1);
+      padding: 20px 0;
+
+      .info-column,
+      .link-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &:not(:first-child) {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        &:not(:last-child) {
+          border-right: 1px solid rgba(34, 34, 34, 0.1);
+        }
+        .title {
+          font-size: 13px;
+          font-family: 'Poppins', sans-serif;
+          color: #22222280;
+        }
+        .detail,
+        a {
+          font-size: 20px;
+          font-family: 'Amiri', sans-serif;
+          color: #333333;
+          margin-top: 5px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .dashboard-image {
+      width: calc(100% - 80px);
+      max-width: 1280px;
+      height: auto;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 40px;
+    }
+
+    .dashboard-image-fetchcore {
+      height: auto;
+      margin-top: 80px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 40px;
+    }
+
+
+    .project-summary-text {
+      font-size: 32px;
+      font-family: 'Amiri', sans-serif;
+      color: #333333;
+      margin: 80px auto 40px;
+      padding: 0 40px;
+      max-width: 770px;
+      display: block;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    figure {
+      text-align: center;
+      .project-detail-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0.5px solid black;
+      }
+      figcaption {
+        margin-top: 5px;
+        font-size: 16px;
+        font-style: italic;
+        font-family: 'Amiri', sans-serif;
+        text-align: center;
+        margin-bottom: 80px;
+      }
+    }
+
+    // Styles for the "About" section
+    .about-section {
+      h2 {
+        font-size: 30px;
+        font-family: 'Amiri', sans-serif;
+        color: #333333;
+        margin: 0px 330px 10px; // Reduced bottom margin from 20px to 10px
+        line-height: 40px;
+        margin-top: 80px; // Reduced top margin from 60px
+        text-align: left;
+      }
+      p {
+        font-size: 20px;
+        font-family: 'Amiri', sans-serif;
+        color: #333333;
+        margin: 20px 330px; // Reduced top margin from 40px to 20px
+        line-height: 30px;
+        text-align: left;
+      }
+    }
+
+    // New styles for the "Outcomes" section
+    .conclusion-section {
+      h2 {
+        font-size: 30px;
+        font-family: 'Amiri', sans-serif;
+        color: #333333;
+        margin: 0px 330px 10px; // Use the same margin as the "About" section
+        line-height: 40px;
+        margin-top: 80px; // Consistent with the "About" section
+        text-align: left;
+      }
+      p {
+        font-size: 20px;
+        font-family: 'Amiri', sans-serif;
+        color: #333333;
+        margin: 20px 330px; // Use the same margin as the "About" section
+        line-height: 30px;
+        text-align: left;
+      }
+    }
+
+    // Styles for the testimonial section
+    .testimonial-section {
+      blockquote {
+        font-size: 28px;
+        font-family: 'Amiri', sans-serif;
+        color: #333333;
+        margin: 80px 330px 20px;
+        text-align: center;
+        font-style: italic;
+        line-height: 35px;
+        quotes: "“" "”" "‘" "’";
+        &:before,
+        &:after {
+          content: open-quote;
+          content: close-quote;
+          font-size: 28px;
+        }
+      }
+      cite {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        color: #22222280;
+        margin: 0px 330px 40px;
+        display: block;
+        text-align: center;
+        font-style: normal; // Ensure the cite is not italicized
+      }
+    }
+
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .project-page .content-container h1 {
+    font-size: 24px;
+  }
+  .project-page .content-container .info-section {
+    flex-direction: column;
+    border-top: none;
+    .info-column,
+    .link-column {
+      padding-left: 0;
+      padding-right: 0;
+      border-right: none;
+      padding-bottom: 1rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+      }
+    }
+  }
+  .project-page .content-container .project-summary-text,
+  .project-page .content-container .about-section h2,
+  .project-page .content-container .about-section p {
+    padding: 20px; // Adjust padding for smaller screens
+    margin: 0 20px; // Adjust margin for smaller screens
+    text-align: left; // Align text to the left on smaller screens
+  }
+}
+
+@media (max-width: 480px) {
+  .project-page .content-container h1 {
+    font-size: 20px;
+  }
+  .project-page .content-container .project-summary-text,
+  .project-page .content-container .about-section h2,
+  .project-page .content-container .about-section p {
+    padding: 20px; // Further adjust padding for very small screens
+    margin: 0 20px; // Further adjust margin for very small screens
+    text-align: left; // Align text to the left on very small screens
+  }
+}

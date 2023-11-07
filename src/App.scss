@@ -1,0 +1,137 @@
+@import './components/Experiences.scss';
+@import './components/Projects/FleetStatusDashboard.scss';
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+// .App-header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 10;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0;
+//   position: relative;
+//   box-sizing: border-box;
+//   font-family: 'Amiri', sans-serif;
+//   font-size: 20px;
+//   line-height: 27px;
+//   color: #333;
+//   -webkit-font-smoothing: antialiased;
+// }
+
+.App-header {
+  /* position: fixed; Remove this line */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  /* position: relative; This line can be removed since it's the default behavior */
+  box-sizing: border-box;
+  font-family: 'Amiri', sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navigation-bar {
+  width: 1280px;
+  height: 144.2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #333333;
+  background-color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.main {
+  display: block;
+  max-width: 920px;
+  margin: 0 auto; /* This centers the .main horizontally with zero margin on top and bottom */
+  font-size: 30px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding-top: 160px; /* This maintains the top padding */
+  padding-bottom: 160px; /* And the bottom padding */
+}
+
+
+
+.button {
+  display: inline-block;
+  height: 60px;
+  padding: 10px 30px;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+  background-color: transparent;
+  transition: background-color 200ms ease, color 200ms ease;
+  font-family: Poppins, sans-serif;
+  color: #222;
+  font-size: 13px;
+  line-height: 41px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  margin: 40px;
+  
+  &:hover {
+    background-color: #222;
+    color: #fff;
+  }
+}
+
+.logo {
+  height: 60px;
+  position: relative;
+}
+
+.selected-work h2 {
+  color: #333333;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px !important; // Ensuring this is applied to h2
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+

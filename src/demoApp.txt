@@ -1,0 +1,191 @@
+// // .project-page {
+// //   padding-top: 144.2px;
+// //   padding-bottom: 80px;
+// //   display: flex;
+// //   justify-content: center;
+// //   width: 100%;
+
+// //   .content-container {
+// //     max-width: 1280px;
+// //     width: 100%;
+// //     padding-left: 0;
+// //     padding-right: 0;
+// //     text-align: left;
+
+// //     h1 {
+// //       font-size: 32px;
+// //       margin: 0 0 20px;
+// //       color: #333333;
+// //       font-family: 'Amiri', sans-serif;
+// //       font-weight: normal;
+// //       text-align: left;
+// //     }
+
+// //     .info-section {
+// //       display: flex;
+// //       justify-content: space-between;
+// //       align-items: center;
+// //       border-top: 1px solid rgba(34, 34, 34, 0.1);
+// //       border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+// //       padding: 20px 0;
+
+// //       .info-column {
+// //         display: flex;
+// //         flex-direction: column;
+// //         align-items: flex-start;
+
+// //         .title {
+// //           font-size: 13px;
+// //           font-family: 'Poppins', sans-serif;
+// //           color: #22222280;
+// //         }
+
+// //         .detail {
+// //           font-size: 20px;
+// //           font-family: 'Amiri', sans-serif;
+// //           color: #333333;
+// //           margin-top: 5px;
+// //         }
+// //       }
+
+// //       .link-column {
+// //         display: flex;
+// //         flex-direction: column;
+// //         align-items: flex-start;
+// //         .title {
+// //           font-size: 13px;
+// //           font-family: 'Poppins', sans-serif;
+// //           color: #22222280;
+// //         }
+// //         .detail {
+// //           font-size: 20px;
+// //           font-family: 'Amiri', sans-serif;
+// //           color: #333333;
+// //           margin-top: 5px;
+// //           a {
+// //             color: inherit; // Ensure link color is consistent
+// //             text-decoration: none; // Optional: remove underline from links
+// //           }
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // Responsive styles
+// // @media (max-width: 768px) {
+// //   .project-page .content-container h1 {
+// //     font-size: 24px;
+// //   }
+// // }
+
+// // @media (max-width: 480px) {
+// //   .project-page .content-container h1 {
+// //     font-size: 20px;
+// //   }
+// // }
+
+
+// .project-page {
+//   padding-top: 144.2px;
+//   padding-bottom: 80px;
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+
+//   .content-container {
+//     max-width: 1280px;
+//     width: 100%;
+//     padding-left: 0;
+//     padding-right: 0;
+//     text-align: left;
+
+//     h1 {
+//       font-size: 32px;
+//       margin: 0 0 20px;
+//       color: #333333;
+//       font-family: 'Amiri', sans-serif;
+//       font-weight: normal;
+//       text-align: left;
+//     }
+
+//     .info-section {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       border-top: 1px solid rgba(34, 34, 34, 0.1);
+//       padding: 20px 0;
+
+//       .info-column {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+//         position: relative;
+
+//         &:not(:last-child)::after {
+//           content: '';
+//           position: absolute;
+//           right: 0;
+//           top: 0;
+//           bottom: 0;
+//           width: 1px;
+//           background: rgba(34, 34, 34, 0.1);
+//         }
+
+//         .title {
+//           font-size: 13px;
+//           font-family: 'Poppins', sans-serif;
+//           color: #22222280;
+//         }
+
+//         .detail {
+//           font-size: 20px;
+//           font-family: 'Amiri', sans-serif;
+//           color: #333333;
+//           margin-top: 5px;
+//         }
+//       }
+
+//       .link-column {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+
+//         .title {
+//           font-size: 13px;
+//           font-family: 'Poppins', sans-serif;
+//           color: #22222280;
+//         }
+
+//         .detail {
+//           font-size: 20px;
+//           font-family: 'Amiri', sans-serif;
+//           color: #333333;
+//           margin-top: 5px;
+
+//           a {
+//             color: inherit;
+//             text-decoration: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // Responsive styles
+// @media (max-width: 768px) {
+//   .project-page .content-container h1 {
+//     font-size: 24px;
+//   }
+
+//   .project-page .content-container .info-section .info-column:not(:last-child)::after {
+//     display: none; // Hide the vertical lines on smaller screens
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .project-page .content-container h1 {
+//     font-size: 20px;
+//   }
+// }

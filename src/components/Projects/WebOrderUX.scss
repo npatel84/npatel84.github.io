@@ -1,0 +1,26 @@
+.project-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Amiri', sans-serif;
+    font-size: 60px; // This font size will be adjusted in media queries for responsiveness
+  
+    h1 {
+      text-align: center;
+    }
+  }
+  
+  // Add media queries for responsiveness
+  @media (max-width: 768px) {
+    .project-page {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-page {
+      font-size: 24px;
+    }
+  }
+  
